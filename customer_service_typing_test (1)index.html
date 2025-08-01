@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Service Typing Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header, footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #004080;
+            color: white;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .passage {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #eef;
+            border-left: 4px solid #004080;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #003060;
+        }
+    </style>
+</head>
+<body>
+    <header>HPS F&amp;A Training Team</header>
+    <div class="container">
+        <h2>Customer Service Typing Test</h2>
+        <div class="passage">
+            Customer service is the cornerstone of a successful business. It involves actively listening to customers, addressing their concerns promptly, and ensuring satisfaction. A friendly tone, clear communication, and empathy are essential traits of a great customer service representative. Whether handling inquiries, resolving complaints, or offering support, the goal is to create a positive experience. Remember, every interaction is an opportunity to build trust and loyalty with your customers.
+        </div>
+        <form action="/submit_typing_test" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="typed_text">Type the passage above:</label>
+            <textarea id="typed_text" name="typed_text" rows="10" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>Training Manager - Pratibha Puri</footer>
+</body>
+</html>
